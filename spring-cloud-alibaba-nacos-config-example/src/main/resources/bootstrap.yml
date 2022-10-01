@@ -1,0 +1,14 @@
+server:
+  port: 18080
+
+spring:
+  application:
+    name: nacos-config-example
+
+  cloud:
+    nacos:
+      config:
+        server-addr: 192.168.1.4:8848
+        username: naocs
+        password: nacos
+        file-extension: yml
