@@ -1,0 +1,27 @@
+server:
+  port: 5006
+
+spring:
+  application:
+    name: dynamic-gateway-example
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.1.4:8848
+        username: naocs
+        password: nacos
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.1.4:3306/db-dynamic-gateway?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useInformationSchema=true&useSSL=false
+    username: root
+    password: root
+
+  redis:
+    host: 192.168.1.4
+    port: 6379
+
+  jackson:
+    date-format: "yyyy-MM-dd HH:mm:ss"
+    time-zone: "Asia/Shanghai"
