@@ -16,8 +16,11 @@
 
 - [x] spring-cloud-alibaba-nacos-discovery-example (nacos做为注册中心示例) 
 - [x] spring-cloud-alibaba-nacos-config-example (nacos做为配置中心示例)
-- [ ] spring-cloud-alibaba-sentinel (Sentinel限流示例)
+- [x] spring-cloud-alibaba-sentinel (Sentinel限流示例)
+    - [x] xiaomizhou-sentinel-client-example (Springboot服务集成Sentinel限流)
+    - [x] xiaomizhou-sentinel-dashboard (sentinel限流控制台)
+    - [x] xiaomizhou-sentinel-gateway-service-example (gateway集成sentinel限流)
 - [ ] spring-cloud-alibaba-seata (Seata分布式事务实例)
 - [x] spring-cloud-dynamic-gateway-example (gateway动态网关示例)
-    1. 使用mysql+redis实现
-    2. 使用thymeleaf模版构建动态路由维护页面(TODO)
+    - [x] 使用mysql+redis实现
+    - [ ] 使用thymeleaf模版构建动态路由维护页面

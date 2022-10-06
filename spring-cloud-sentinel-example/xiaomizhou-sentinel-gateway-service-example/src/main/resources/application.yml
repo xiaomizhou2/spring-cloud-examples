@@ -1,0 +1,28 @@
+server:
+  port: 18081
+
+spring:
+  application:
+    name: sentinel-gateway-service-example
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.1.4:8848
+        username: naocs
+        password: nacos
+
+    sentinel:
+      transport:
+        dashboard: 127.0.0.1:8080
+        port: 8719
+
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: nacos-discovery-example
+          uri: lb://nacos-discovery-example
+          predicates:
+            - Path=/examples/**
