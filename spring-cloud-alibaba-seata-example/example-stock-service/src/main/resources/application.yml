@@ -1,0 +1,41 @@
+server:
+  port: 18080
+
+spring:
+  application:
+    name: stock-service
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.1.4:8848
+
+  datasource:
+    url: jdbc:mysql://192.168.1.4:3306/seata?allowMultiQueries=true
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+
+logging:
+  level:
+    io:
+      seata: debug
+
+seata:
+  enabled: true
+  application-id: ${spring.application.name}
+  tx-service-group: ${spring.application.name}-tx-group
+  config:
+    type: nacos
+    nacos:
+      server-addr: ${spring.cloud.nacos.discovery.server-addr}
+      group: SEATA_GROUP
+  registry:
+    type: nacos
+    nacos:
+      application: seata-server
+      server-addr: ${spring.cloud.nacos.discovery.server-addr}
+      group: SEATA_GROUP
+  service:
+    vgroup-mapping:
+      order-service-tx-group: default

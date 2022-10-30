@@ -15,6 +15,7 @@
         <module>spring-cloud-alibaba-nacos-config-example</module>
         <module>spring-cloud-dynamic-gateway-example</module>
         <module>spring-cloud-sentinel-example</module>
+        <module>spring-cloud-alibaba-seata-example</module>
     </modules>
 
     <properties>
@@ -27,6 +28,7 @@
         <lombok.version>1.18.24</lombok.version>
         <mybatis-plus.version>3.5.2</mybatis-plus.version>
         <fastjson.version>1.2.83</fastjson.version>
+        <seata.version>1.5.2</seata.version>
     </properties>
 
     <dependencyManagement>
@@ -71,6 +73,11 @@
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>
                 <version>${fastjson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.seata</groupId>
+                <artifactId>seata-spring-boot-starter</artifactId>
+                <version>${seata.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
