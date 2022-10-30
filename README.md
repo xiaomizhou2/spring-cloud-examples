@@ -20,7 +20,7 @@
     - [x] xiaomizhou-sentinel-client-example (springboot服务集成sentinel限流)
     - [x] xiaomizhou-sentinel-dashboard (sentinel限流控制台)
     - [x] xiaomizhou-sentinel-gateway-service-example (gateway集成sentinel限流)
-- [ ] spring-cloud-alibaba-seata-example (seata分布式事务示例)
+- [x] spring-cloud-alibaba-seata-example (seata分布式事务示例)
 - [x] spring-cloud-dynamic-gateway-example (gateway动态网关示例)
     - [x] 使用mysql+redis实现
     - [ ] 使用thymeleaf模版构建动态路由维护页面
